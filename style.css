@@ -1,0 +1,6853 @@
+/*------------------MBILE LANDSCAPE----------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+
+@media only screen
+  and (min-width: 621px)
+  and (max-width:800px)
+  and (orientation:landscape)
+  
+{
+  body{
+    background-color:black;
+    justify-content:center;
+    display:flex;
+  }
+  .mobile-table-mirror{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size: contain;
+    background-color:black;
+    padding-top:10%;
+    justify-items:center;
+    display:block;
+  }
+  .full-mirror{
+    width:100%;
+    height:70%;
+    flex-direction:column;
+    justify-content:flex-end;
+    display:flex;
+    position:relative;
+    background-color:none;
+  }
+  /* News */
+  .news {
+    top: 5%;
+    left: 35%;
+    width: 21%;
+    height: 23%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/news_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .news:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(150%);
+  }
+  /* Poster */
+  .poster {
+    top: 6%;
+    right: 17%;
+    width: 23%;
+    height: 22%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/poster_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .poster:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(130%);
+  }
+  .mirror{
+    width:100%;
+    height:80%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/mirrow.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:bottom;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+  }
+  .table{
+    margin-top:-1%;
+    width:100%;
+    height:30%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/table_hover.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+  }
+  .books{
+    width:10%;
+    height:35%;
+    background-color:none;
+    position:absolute;
+    bottom:0%;
+    left:35%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+  }
+  .magic{
+    height:90%;
+    width:11%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-magic_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-700%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .magic:hover {
+    transform: scale(1.5);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-magic{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content-magic {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .quote{
+    font-style:normal;
+    font-family: Verdana, Geneva, sans-serif;
+    border-left-color:#2c4762;
+    font-size:14px;
+    color:black;
+    text-align:justify;
+  }
+  .text {
+    background-color:none;
+    width:70%;
+    margin:auto;
+    color:black;
+    text-align:center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:16px;
+  }
+  .main-text {
+    font-size:20px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 10px  16px 20px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .bio{
+    margin-left:-1%;
+    height:110%;
+    width:12%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-bio_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(500%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .bio:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-bio{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .modal-content-bio {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .gal{
+    margin-left:-1%;
+    height:120%;
+    width:16%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-galerie.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .gal:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-gal{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /*grid for photo Gallery */
+  .modal-content-gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: none;
+    margin: auto;
+    padding:40px;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Modal Gallerie */
+  /* The Modal (background) */
+  .modalGal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90vw;
+  }
+  img {
+    margin-bottom: -4px;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 3px;
+  }
+  img.slides {
+    height:100vh;
+    object-fit:contain;
+    background-color:black;
+    position:relative;
+  }
+  .close {
+    color: RGB(244, 255, 255);
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 40px;
+    font-weight: bold;
+    z-index:2;
+  }
+  .close:hover,
+  .close:focus {
+    color: RGB(255, 248, 234);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /*Termin*/
+  .termin{
+    margin-left:-1%;
+    height:110%;
+    width:20%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-termine_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  .termin:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-termin{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .header-termin {
+    margin-top:3%;
+  }
+  .termin-table {
+    width:80%;
+    margin: 0px auto 30px;
+    justify-content: center;
+    display:flex;
+  }
+  table, th, td {
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    font-size:12px;
+    font-weight:500;
+    color:black;
+  }
+  .modal-content-termin {
+    font-size: 20px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  .kontakt{
+    margin-left:-10%;
+    height:100%;
+    width:22%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-kontakt_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .kontakt:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-kontakt{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  .kontakt-form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+    font-size:16px;
+  }
+  .modal-content-kontakt {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top:0px;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 2px 16px 40px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .hat{
+    height:30%;
+    width:10%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/zylinder_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    position:absolute;
+    right:35%;
+    bottom:0%;
+    z-index:1;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInRight;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hat:hover {
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/rabbit.png");
+    background-size:contain;
+    /*transform: scale(1.3); (110% zoom)
+    transition-delay: 1s;*/
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+  }
+  .chair{
+    bottom: 0%;
+    width:30%;
+    height:15%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/chair-logo_hover_bright2.png');
+    background-color:none;
+    position:absolute;
+    left: 20%;
+  }
+  .chair{
+    bottom: 0%;
+    width:35%;
+    height:20%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/chair-logo_hover_bright2.png');
+    background-color:none;
+    position:absolute;
+    left: 39%;
+  }
+  .film{
+    width:45%;
+    height:15%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/film-reel_hover.png');
+    background-color:none;
+    position:absolute;
+    right: 4%;
+    bottom:0%;
+    font-size:16px;
+    vertical-align: text-top;
+  }
+  .vid{
+    width:65%;
+    height:72%;
+    position:absolute;
+    bottom:10%;
+    filter:opacity(60%);
+    background-color:none;
+  }
+  /* Social Media */
+  .facebook {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:25%;
+    right:10%;
+    width:8%;
+    height:7%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/Facebook-icon-isolated-on-transparent-background-PNG.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    border-radius: 10px;
+  }
+  .facebook:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .instagram {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:15%;
+    right:10%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/pngwing.com_-e1643133331133.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:8%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .instagram:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .youtube {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:5%;
+    right:10%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/41603715902povuvxbr1l-1.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:8%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .youtube:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+}
+
+/*------------------MBILE PORTRAIT----------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+
+@media only screen
+  and (max-width: 640px)
+  and (orientation:portrait)
+  
+{
+  body{
+    background-color:black;
+    justify-content:center;
+    display:flex;
+  }
+  .mobile-table-mirror{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size: contain;
+    background-color:black;
+    padding-top:10%;
+    justify-items:center;
+    display:block;
+  }
+  .full-mirror{
+    width:100%;
+    height:60%;
+    flex-direction:column;
+    justify-content:flex-end;
+    display:flex;
+  }
+  /* News */
+  .news {
+    top: 5%;
+    left: 20%;
+    width: 21%;
+    height: 23%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/news_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .news:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(150%);
+  }
+  /* Poster */
+  .poster {
+    top: 6%;
+    right: 17%;
+    width: 23%;
+    height: 22%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/poster_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .poster:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(130%);
+  }
+  .mirror{
+    width:100%;
+    height:60%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/mirrow.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:bottom;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+  }
+  .table{
+    margin-top:-1%;
+    width:100%;
+    height:40%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/table_hover.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+  }
+  .books{
+    width:40%;
+    height:35%;
+    background-color:none;
+    position:absolute;
+    bottom:0%;
+    left:5%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+  }
+  .magic{
+    height:90%;
+    width:11%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-magic_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-700%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .magic:hover {
+    transform: scale(1.5);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-magic{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content-magic {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .quote{
+    font-style:normal;
+    font-family: Verdana, Geneva, sans-serif;
+    border-left-color:#2c4762;
+    font-size:14px;
+    color:black;
+    text-align:justify;
+  }
+  .text {
+    background-color:none;
+    width:70%;
+    margin:auto;
+    color:black;
+    text-align:center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:16px;
+  }
+  .main-text {
+    font-size:20px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 10px  16px 20px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .bio{
+    margin-left:-1%;
+    height:110%;
+    width:12%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-bio_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(500%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .bio:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-bio{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .modal-content-bio {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .gal{
+    margin-left:-1%;
+    height:120%;
+    width:16%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-galerie.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .gal:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-gal{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /*grid for photo Gallery */
+  .modal-content-gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: none;
+    margin: auto;
+    padding:40px;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Modal Gallerie */
+  /* The Modal (background) */
+  .modalGal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90vw;
+  }
+  img {
+    margin-bottom: -4px;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 3px;
+  }
+  img.slides {
+    height:100vh;
+    object-fit:contain;
+    background-color:black;
+    position:relative;
+  }
+  .close {
+    color: RGB(244, 255, 255);
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 40px;
+    font-weight: bold;
+    z-index:2;
+  }
+  .close:hover,
+  .close:focus {
+    color: RGB(255, 248, 234);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /*Termin*/
+  .termin{
+    margin-left:-1%;
+    height:110%;
+    width:20%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-termine_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  .termin:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-termin{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .header-termin {
+    margin-top:3%;
+  }
+  .termin-table {
+    width:80%;
+    margin: 0px auto 30px;
+    justify-content: center;
+    display:flex;
+  }
+  table, th, td {
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    font-size:12px;
+    font-weight:500;
+    color:black;
+  }
+  .modal-content-termin {
+    font-size: 20px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  .kontakt{
+    margin-left:-10%;
+    height:100%;
+    width:22%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-kontakt_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .kontakt:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-kontakt{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  .kontakt-form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+    font-size:16px;
+  }
+  .modal-content-kontakt {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top:0px;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 2px 16px 40px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .hat{
+    height:50%;
+    width:20%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/zylinder_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    position:absolute;
+    right:10%;
+    bottom:0%;
+    z-index:1;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInRight;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hat:hover {
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/rabbit.png");
+    background-size:contain;
+    /*transform: scale(1.3); (110% zoom)
+    transition-delay: 1s;*/
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+  }
+  .chair{
+    margin-top: 5%;
+    width:30%;
+    height:15%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/chair-logo_hover_bright2.png');
+    background-color:none;
+    position:absolute;
+    left: 20%;
+  }
+  .chair{
+    margin-top: 5%;
+    width:30%;
+    height:15%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/chair-logo_hover_bright2.png');
+    background-color:none;
+    position:absolute;
+    left: 20%;
+  }
+  .film{
+    width:45%;
+    height:10%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/film-reel_hover.png');
+    background-color:none;
+    position:absolute;
+    right: 5%;
+    margin-top:15%;
+  }
+  .vid{
+    width:65%;
+    height:72%;
+    position:absolute;
+    bottom:10%;
+    filter:opacity(60%);
+    background-color:none;
+  }
+  /* Social Media */
+  .facebook {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:10%;
+    left:15%;
+    width:12%;
+    height:7%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/Facebook-icon-isolated-on-transparent-background-PNG.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    border-radius: 10px;
+  }
+  .facebook:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .instagram {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:10%;
+    left:45%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/pngwing.com_-e1643133331133.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:12%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .instagram:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .youtube {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:10%;
+    left:75%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/41603715902povuvxbr1l-1.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:12%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .youtube:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+}
+/*end @media*--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------*/
+@media only screen
+  and (min-width: 801px)
+  and (max-width:1022px)
+  and (orientation:landscape)
+{
+  body{
+    background-color:black;
+    justify-content:center;
+    display:flex;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size:contain;
+  }
+  .mobile-table-mirror{
+    width:80%;
+    height:100%;
+    position:absolute;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size: contain;
+    background-color:none;
+    padding-top:10%;
+    justify-items:center;
+    display:block;
+  }
+  .full-mirror{
+    width:100%;
+    height:60%;
+    flex-direction:column;
+    justify-content:flex-end;
+    display:flex;
+  }
+  /* News */
+  .news {
+    z-index:1;
+    top: 5%;
+    left: 10%;
+    width: 31%;
+    height: 33%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/news_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .news:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(150%);
+  }
+  /* Poster */
+  .poster {
+    z-index:1;
+    top: 8%;
+    right: 7%;
+    width: 15%;
+    height: 32%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/poster_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .poster:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(130%);
+  }
+  .mirror{
+    width:100%;
+    height:80%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/mirrow.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:bottom;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+  }
+  .table{
+    margin-top:-1%;
+    width:100%;
+    height:40%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/table_hover.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+  }
+  .books{
+    width:25%;
+    height:35%;
+    background-color:none;
+    position:absolute;
+    bottom:0%;
+    left:5%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+  }
+  .magic{
+    height:90%;
+    width:11%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-magic_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-700%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .magic:hover {
+    transform: scale(1.5);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-magic{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content-magic {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  .quote{
+    font-style:normal;
+    font-family: Verdana, Geneva, sans-serif;
+    border-left-color:#2c4762;
+    font-size:14px;
+    color:black;
+    text-align:justify;
+  }
+  .text {
+    background-color:none;
+    width:70%;
+    margin:auto;
+    color:black;
+    text-align:center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:16px;
+  }
+  .main-text {
+    font-size:20px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 10px  16px 20px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .bio{
+    margin-left:-1%;
+    height:110%;
+    width:12%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-bio_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(500%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .bio:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-bio{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .modal-content-bio {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .gal{
+    margin-left:-1%;
+    height:120%;
+    width:16%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-galerie.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .gal:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-gal{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /*grid for photo Gallery */
+  .modal-content-gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: none;
+    margin: auto;
+    padding:40px;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Modal Gallerie */
+  /* The Modal (background) */
+  .modalGal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90vw;
+  }
+  img {
+    margin-bottom: -4px;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 3px;
+  }
+  img.slides {
+    height:100vh;
+    object-fit:contain;
+    background-color:black;
+    position:relative;
+  }
+  .close {
+    color: RGB(244, 255, 255);
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 40px;
+    font-weight: bold;
+    z-index:2;
+  }
+  .close:hover,
+  .close:focus {
+    color: RGB(255, 248, 234);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /*Termin*/
+  .termin{
+    margin-left:-1%;
+    height:110%;
+    width:20%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-termine_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  .termin:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-termin{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .header-termin {
+    margin-top:3%;
+  }
+  .termin-table {
+    width:80%;
+    margin: 0px auto 30px;
+    justify-content: center;
+    display:flex;
+  }
+  table, th, td {
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    font-size:12px;
+    font-weight:500;
+    color:black;
+  }
+  .modal-content-termin {
+    font-size: 20px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  .kontakt{
+    margin-left:-10%;
+    height:100%;
+    width:22%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-kontakt_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .kontakt:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-kontakt{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  .kontakt-form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+    font-size:16px;
+  }
+  .modal-content-kontakt {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top:0px;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 2px 16px 40px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .hat{
+    height:30%;
+    width:15%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/zylinder_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    position:absolute;
+    right:10%;
+    bottom:0%;
+    z-index:1;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInRight;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hat:hover {
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/rabbit.png");
+    background-size:contain;
+    /*transform: scale(1.3); (110% zoom)
+    transition-delay: 1s;*/
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+  }
+  .chair{
+    margin-top: 3%;
+    width:50%;
+    height:30%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/chair-logo_hover_bright2.png');
+    background-color:none;
+    position:absolute;
+    left: 25%;
+  }
+  .film{
+    width:35%;
+    height:15%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/film-reel_hover.png');
+    background-color:none;
+    position:absolute;
+    right:13%;
+    bottom:1%;
+  }
+  .vid{
+    width:65%;
+    height:70%;
+    position:absolute;
+    bottom:10%;
+    filter:opacity(60%);
+    background-color:none;
+  }
+  /* Social Media */
+  .facebook {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:25%;
+    right:0%;
+    width:8%;
+    height:7%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/Facebook-icon-isolated-on-transparent-background-PNG.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    border-radius: 10px;
+  }
+  .facebook:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .instagram {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:15%;
+    right:0%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/pngwing.com_-e1643133331133.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:8%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .instagram:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .youtube {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:5%;
+    right:0%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/41603715902povuvxbr1l-1.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:8%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .youtube:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+}
+
+
+/*for TABLET PORTRAIT--------------------------------------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------*/
+@media only screen
+  and (min-width: 641px)
+  and (max-width:1022px)
+  and (orientation:portrait)
+{
+  body{
+    background-color:black;
+    justify-content:center;
+    display:flex;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size:contain;
+  }
+  .mobile-table-mirror{
+    width:80%;
+    height:100%;
+    position:absolute;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size: contain;
+    background-color:none;
+    padding-top:10%;
+    justify-items:center;
+    display:block;
+  }
+  .full-mirror{
+    width:100%;
+    height:60%;
+    flex-direction:column;
+    justify-content:flex-end;
+    display:flex;
+  }
+  /* News */
+  .news {
+    z-index:1;
+    top: 2%;
+    left: 20%;
+    width: 20%;
+    height: 25%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/news_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .news:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(150%);
+  }
+  /* Poster */
+  .poster {
+    z-index:1;
+    top: 3%;
+    right: 16%;
+    width: 25%;
+    height: 25%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/poster_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .poster:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(130%);
+  }
+  .mirror{
+    width:100%;
+    height:80%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/mirrow.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:bottom;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+  }
+  .table{
+    margin-top:-1%;
+    width:100%;
+    height:40%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/table_hover.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+  }
+  .books{
+    width:25%;
+    height:35%;
+    background-color:none;
+    position:absolute;
+    bottom:0%;
+    left:5%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+  }
+  .magic{
+    height:90%;
+    width:11%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-magic_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-700%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .magic:hover {
+    transform: scale(1.5);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-magic{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content-magic {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  .quote{
+    font-style:normal;
+    font-family: Verdana, Geneva, sans-serif;
+    border-left-color:#2c4762;
+    font-size:14px;
+    color:black;
+    text-align:justify;
+  }
+  .text {
+    background-color:none;
+    width:70%;
+    margin:auto;
+    color:black;
+    text-align:center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:16px;
+  }
+  .main-text {
+    font-size:20px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 10px  16px 20px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .bio{
+    margin-left:-1%;
+    height:110%;
+    width:12%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-bio_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(500%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .bio:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-bio{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .modal-content-bio {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .gal{
+    margin-left:-1%;
+    height:120%;
+    width:16%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-galerie.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .gal:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-gal{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /*grid for photo Gallery */
+  .modal-content-gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: none;
+    margin: auto;
+    padding:40px;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Modal Gallerie */
+  /* The Modal (background) */
+  .modalGal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90vw;
+  }
+  img {
+    margin-bottom: -4px;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 3px;
+  }
+  img.slides {
+    height:100vh;
+    object-fit:contain;
+    background-color:black;
+    position:relative;
+  }
+  .close {
+    color: RGB(244, 255, 255);
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 40px;
+    font-weight: bold;
+    z-index:2;
+  }
+  .close:hover,
+  .close:focus {
+    color: RGB(255, 248, 234);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /*Termin*/
+  .termin{
+    margin-left:-1%;
+    height:110%;
+    width:20%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-termine_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  .termin:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-termin{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .header-termin {
+    margin-top:3%;
+  }
+  .termin-table {
+    width:80%;
+    margin: 0px auto 30px;
+    justify-content: center;
+    display:flex;
+  }
+  table, th, td {
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    font-size:12px;
+    font-weight:500;
+    color:black;
+  }
+  .modal-content-termin {
+    font-size: 20px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  .kontakt{
+    margin-left:-10%;
+    height:100%;
+    width:22%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-kontakt_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .kontakt:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-kontakt{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  .kontakt-form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+    font-size:16px;
+  }
+  .modal-content-kontakt {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top:0px;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 2px 16px 40px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .hat{
+    height:30%;
+    width:15%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/zylinder_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    position:absolute;
+    right:10%;
+    bottom:0%;
+    z-index:1;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInRight;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hat:hover {
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/rabbit.png");
+    background-size:contain;
+    /*transform: scale(1.3); (110% zoom)
+    transition-delay: 1s;*/
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+  }
+  .chair{
+    bottom:15%;
+    width:20%;
+    height:15%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/chair-logo_hover_bright2.png');
+    background-color:none;
+    position:absolute;
+    left: 15%;
+  }
+  .film{
+    width:35%;
+    height:7%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/film-reel_hover.png');
+    background-color:none;
+    position:absolute;
+    right:13%;
+    bottom:15%;
+  }
+  .vid{
+    width:65%;
+    height:70%;
+    position:absolute;
+    bottom:10%;
+    filter:opacity(60%);
+    background-color:none;
+  }
+  /* Social Media */
+  .facebook {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:5%;
+    right:65%;
+    width:8%;
+    height:5%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/Facebook-icon-isolated-on-transparent-background-PNG.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    border-radius: 10px;
+  }
+  .facebook:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .instagram {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:5%;
+    right:45%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/pngwing.com_-e1643133331133.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:8%;
+    height:5%;
+    border-radius: 10px;
+  }
+  .instagram:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .youtube {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:5%;
+    right:25%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/41603715902povuvxbr1l-1.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:8%;
+    height:5%;
+    border-radius: 10px;
+  }
+  .youtube:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+}
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------*/
+@media only screen
+  and (min-width: 1023px)
+  and (max-width:1200px)
+{
+  body{
+    background-color:black;
+    justify-content:center;
+    display:flex;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size:contain;
+  }
+  .mobile-table-mirror{
+    width:80%;
+    height:100%;
+    position:absolute;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size: contain;
+    background-color:none;
+    padding-top:10%;
+    justify-items:center;
+    display:block;
+  }
+  .full-mirror{
+    width:100%;
+    height:60%;
+    flex-direction:column;
+    justify-content:flex-end;
+    display:flex;
+  }
+  /* News */
+  .news {
+    z-index:1;
+    top: 2%;
+    left: 12%;
+    width: 31%;
+    height: 33%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/news_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .news:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(150%);
+  }
+  /* Poster */
+  .poster {
+    z-index:1;
+    top: 5%;
+    right: 7%;
+    width: 15%;
+    height: 32%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/poster_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .poster:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(130%);
+  }
+  .mirror{
+    width:100%;
+    height:100%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/mirrow.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:bottom;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+  }
+  .table{
+    margin-top:-1%;
+    width:100%;
+    height:40%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/table_hover.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+  }
+  .books{
+    width:20%;
+    height:35%;
+    background-color:none;
+    position:absolute;
+    bottom:0%;
+    left:10%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+  }
+  .magic{
+    height:100%;
+    width:11%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-magic_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-700%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .magic:hover {
+    transform: scale(1.5);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-magic{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content-magic {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .quote{
+    font-style:normal;
+    font-family: Verdana, Geneva, sans-serif;
+    border-left-color:#2c4762;
+    font-size:14px;
+    color:black;
+    text-align:justify;
+  }
+  .text {
+    background-color:none;
+    width:70%;
+    margin:auto;
+    color:black;
+    text-align:center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:16px;
+  }
+  .main-text {
+    font-size:20px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 10px  16px 20px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .bio{
+    margin-left:-1%;
+    height:110%;
+    width:12%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-bio_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(500%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .bio:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-bio{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .modal-content-bio {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .gal{
+    margin-left:-1%;
+    height:120%;
+    width:16%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-galerie.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .gal:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-gal{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /*grid for photo Gallery */
+  .modal-content-gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: none;
+    margin: auto;
+    padding:40px;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Modal Gallerie */
+  /* The Modal (background) */
+  .modalGal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90vw;
+  }
+  img {
+    margin-bottom: -4px;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 3px;
+  }
+  img.slides {
+    height:100vh;
+    object-fit:contain;
+    background-color:black;
+    position:relative;
+  }
+  .close {
+    color: RGB(244, 255, 255);
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 40px;
+    font-weight: bold;
+    z-index:2;
+  }
+  .close:hover,
+  .close:focus {
+    color: RGB(255, 248, 234);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /*Termin*/
+  .termin{
+    margin-left:-1%;
+    height:110%;
+    width:20%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-termine_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  .termin:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-termin{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .header-termin {
+    margin-top:3%;
+  }
+  .termin-table {
+    width:80%;
+    margin: 0px auto 30px;
+    justify-content: center;
+    display:flex;
+  }
+  table, th, td {
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    font-size:12px;
+    font-weight:500;
+    color:black;
+  }
+  .modal-content-termin {
+    font-size: 20px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  .kontakt{
+    margin-left:-10%;
+    height:100%;
+    width:22%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-kontakt_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .kontakt:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-kontakt{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  .kontakt-form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+    font-size:16px;
+  }
+  .modal-content-kontakt {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top:0px;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 2px 16px 40px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .hat{
+    height:30%;
+    width:15%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/zylinder_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    position:absolute;
+    right:10%;
+    bottom:0%;
+    z-index:1;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInRight;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hat:hover {
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/rabbit.png");
+    background-size:contain;
+    /*transform: scale(1.3); (110% zoom)
+    transition-delay: 1s;*/
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+  }
+  .chair{
+    bottom:1%;
+    width:50%;
+    height:30%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/chair-logo_hover_bright2.png');
+    background-color:none;
+    position:absolute;
+    left: 20%;
+  }
+  .film{
+    width:35%;
+    height:15%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/film-reel_hover.png');
+    background-color:none;
+    position:absolute;
+    right:13%;
+    bottom:1%;
+    ;
+  }
+  .vid{
+    width:65%;
+    height:70%;
+    position:absolute;
+    bottom:10%;
+    filter:opacity(60%);
+    background-color:none;
+  }
+  /* Social Media */
+  .facebook {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:22%;
+    right:0%;
+    width:6%;
+    height:7%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/Facebook-icon-isolated-on-transparent-background-PNG.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    border-radius: 10px;
+  }
+  .facebook:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .instagram {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:12%;
+    right:0%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/pngwing.com_-e1643133331133.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:6%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .instagram:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .youtube {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:2%;
+    right:0%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/41603715902povuvxbr1l-1.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:6%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .youtube:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+}
+/*----------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+@media only screen
+  and (min-width: 1201px)
+  and (max-width:1400px)
+{
+  body{
+    background-color:black;
+    justify-content:center;
+    display:flex;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size:contain;
+  }
+  .mobile-table-mirror{
+    width:80%;
+    height:100%;
+    position:absolute;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size: contain;
+    background-color:none;
+    padding-top:10%;
+    justify-items:center;
+    display:block;
+  }
+  .full-mirror{
+    width:100%;
+    height:60%;
+    flex-direction:column;
+    justify-content:flex-end;
+    display:flex;
+  }
+  /* News */
+  .news {
+    z-index:1;
+    top: 5%;
+    left: 15%;
+    width: 15%;
+    height: 42%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/news_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .news:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(150%);
+  }
+  /* Poster */
+  .poster {
+    z-index:1;
+    top: 8%;
+    right: 14%;
+    width: 12%;
+    height: 40%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/poster_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .poster:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(130%);
+  }
+  .mirror{
+    width:100%;
+    height:100%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/mirrow.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:bottom;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+  }
+  .table{
+    margin-top:-1%;
+    width:100%;
+    height:40%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/table_hover.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+  }
+  .books{
+    width:15%;
+    height:35%;
+    background-color:none;
+    position:absolute;
+    bottom:0%;
+    left:20%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+  }
+  .magic{
+    height:100%;
+    width:11%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-magic_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-700%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .magic:hover {
+    transform: scale(1.5);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-magic{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content-magic {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .quote{
+    font-style:normal;
+    font-family: Verdana, Geneva, sans-serif;
+    border-left-color:#2c4762;
+    font-size:14px;
+    color:black;
+    text-align:justify;
+  }
+  .text {
+    background-color:none;
+    width:70%;
+    margin:auto;
+    color:black;
+    text-align:center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:16px;
+  }
+  .main-text {
+    font-size:20px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 10px  16px 20px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .bio{
+    margin-left:-1%;
+    height:110%;
+    width:12%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-bio_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(500%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .bio:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-bio{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .modal-content-bio {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .gal{
+    margin-left:-1%;
+    height:120%;
+    width:16%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-galerie.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .gal:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-gal{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /*grid for photo Gallery */
+  .modal-content-gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: none;
+    margin: auto;
+    padding:40px;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Modal Gallerie */
+  /* The Modal (background) */
+  .modalGal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90vw;
+  }
+  img {
+    margin-bottom: -4px;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 3px;
+  }
+  img.slides {
+    height:100vh;
+    object-fit:contain;
+    background-color:black;
+    position:relative;
+  }
+  .close {
+    color: RGB(244, 255, 255);
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 40px;
+    font-weight: bold;
+    z-index:2;
+  }
+  .close:hover,
+  .close:focus {
+    color: RGB(255, 248, 234);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /*Termin*/
+  .termin{
+    margin-left:-1%;
+    height:110%;
+    width:20%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-termine_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  .termin:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-termin{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .header-termin {
+    margin-top:3%;
+  }
+  .termin-table {
+    width:80%;
+    margin: 0px auto 30px;
+    justify-content: center;
+    display:flex;
+  }
+  table, th, td {
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    font-size:12px;
+    font-weight:500;
+    color:black;
+  }
+  .modal-content-termin {
+    font-size: 20px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  .kontakt{
+    margin-left:-10%;
+    height:100%;
+    width:22%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-kontakt_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .kontakt:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-kontakt{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  .kontakt-form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+    font-size:16px;
+  }
+  .modal-content-kontakt {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top:0px;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 2px 16px 40px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .hat{
+    height:30%;
+    width:15%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/zylinder_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    position:absolute;
+    right:20%;
+    bottom:0%;
+    z-index:1;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInRight;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hat:hover {
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/rabbit.png");
+    background-size:contain;
+    /*transform: scale(1.3); (110% zoom)
+    transition-delay: 1s;*/
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+  }
+  .chair{
+    bottom: 0%;
+    width:50%;
+    height:30%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/chair-logo_hover_bright2.png');
+    background-color:none;
+    position:absolute;
+    left: 28%;
+  }
+  .film{
+    width:35%;
+    height:18%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/film-reel_hover.png');
+    background-color:none;
+    position:absolute;
+    right:16%;
+    bottom:0%;
+    font-size:26px;
+  }
+  .vid{
+    width:65%;
+    height:70%;
+    position:absolute;
+    bottom:10%;
+    filter:opacity(60%);
+    background-color:none;
+  }
+  /* Social Media */
+  .facebook {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:25%;
+    right:5%;
+    width:6%;
+    height:7%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/Facebook-icon-isolated-on-transparent-background-PNG.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    border-radius: 10px;
+  }
+  .facebook:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .instagram {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:15%;
+    right:5%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/pngwing.com_-e1643133331133.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:6%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .instagram:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .youtube {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:5%;
+    right:5%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/41603715902povuvxbr1l-1.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:6%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .youtube:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+}
+/*----------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+@media only screen
+  and (min-width: 1401px)
+  and (max-width:1599px)
+{
+  body{
+    background-color:black;
+    justify-content:center;
+    display:flex;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size:contain;
+  }
+  .mobile-table-mirror{
+    width:80%;
+    height:100%;
+    position:absolute;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size: contain;
+    background-color:none;
+    padding-top:10%;
+    justify-items:center;
+    display:block;
+  }
+  .full-mirror{
+    width:100%;
+    height:60%;
+    flex-direction:column;
+    justify-content:flex-end;
+    display:flex;
+  }
+  /* News */
+  .news {
+    z-index:1;
+    top: 5%;
+    left: 12%;
+    width: 15%;
+    height: 42%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/news_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .news:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(150%);
+  }
+  /* Poster */
+  .poster {
+    z-index:1;
+    top: 10%;
+    right: 10%;
+    width: 14%;
+    height: 35%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/poster_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .poster:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(130%);
+  }
+  .mirror{
+    width:100%;
+    height:100%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/mirrow.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:bottom;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+  }
+  .table{
+    margin-top:-1%;
+    width:100%;
+    height:40%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/table_hover.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+  }
+  .books{
+    width:15%;
+    height:40%;
+    background-color:none;
+    position:absolute;
+    bottom:0%;
+    left:25%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+  }
+  .magic{
+    height:100%;
+    width:17%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-magic_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-700%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .magic:hover {
+    transform: scale(1.5);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-magic{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content-magic {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .quote{
+    font-style:normal;
+    font-family: Verdana, Geneva, sans-serif;
+    border-left-color:#2c4762;
+    font-size:14px;
+    color:black;
+    text-align:justify;
+    font-size:22px;
+  }
+  .text {
+    background-color:none;
+    width:70%;
+    margin:auto;
+    color:black;
+    text-align:center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:16px;
+  }
+  .main-text {
+    font-size:30px;
+  }
+  li{
+    font-size: 20px;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top:5%;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 10px  16px 20px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .bio{
+    margin-left:-1%;
+    height:110%;
+    width:17%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-bio_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(500%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .bio:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-bio{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .modal-content-bio {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  .gal{
+    margin-left:-1%;
+    height:120%;
+    width:17%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-galerie.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .gal:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-gal{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /*grid for photo Gallery */
+  .modal-content-gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: none;
+    margin: auto;
+    padding:40px;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Modal Gallerie */
+  /* The Modal (background) */
+  .modalGal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90vw;
+  }
+  img {
+    margin-bottom: -4px;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 3px;
+  }
+  img.slides {
+    height:100vh;
+    object-fit:contain;
+    background-color:black;
+    position:relative;
+  }
+  .close {
+    color: RGB(244, 255, 255);
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 40px;
+    font-weight: bold;
+    z-index:2;
+  }
+  .close:hover,
+  .close:focus {
+    color: RGB(255, 248, 234);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /*Termin*/
+  .termin{
+    margin-left:-1%;
+    height:110%;
+    width:20%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-termine_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  .termin:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-termin{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .header-termin {
+    margin-top:3%;
+  }
+  .termin-table {
+    width:80%;
+    margin: 0px auto 30px;
+    justify-content: center;
+    display:flex;
+  }
+  table, th, td {
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    font-size:26px;
+    font-weight:500;
+    color:black;
+  }
+  .modal-content-termin {
+    font-size: 20px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  .kontakt{
+    margin-left:-10%;
+    height:100%;
+    width:22%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-kontakt_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .kontakt:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-kontakt{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  .kontakt-form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+    font-size:26px;
+  }
+  h1{
+    font-size:30px;
+  }
+  .modal-content-kontakt {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top:0px;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 2px 16px 40px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .hat{
+    height:30%;
+    width:15%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/zylinder_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    position:absolute;
+    right:20%;
+    bottom:0%;
+    z-index:1;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInRight;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hat:hover {
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/rabbit.png");
+    background-size:contain;
+    /*transform: scale(1.3); (110% zoom)
+    transition-delay: 1s;*/
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+  }
+  .chair{
+    bottom: 0%;
+    width:50%;
+    height:30%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/chair-logo_hover_bright2.png');
+    background-color:none;
+    position:absolute;
+    left: 23%;
+  }
+  .film{
+    width:35%;
+    height:18%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/film-reel_hover.png');
+    background-color:none;
+    position:absolute;
+    right:16%;
+    bottom:0%;
+    font-size:32px;
+  }
+  .vid{
+    width:65%;
+    height:70%;
+    position:absolute;
+    bottom:10%;
+    filter:opacity(60%);
+    background-color:none;
+  }
+  /* Social Media */
+  .facebook {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:22%;
+    right:5%;
+    width:6%;
+    height:7%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/Facebook-icon-isolated-on-transparent-background-PNG.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    border-radius: 10px;
+  }
+  .facebook:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .instagram {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:12%;
+    right:5%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/pngwing.com_-e1643133331133.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:6%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .instagram:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .youtube {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:2%;
+    right:5%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/41603715902povuvxbr1l-1.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:6%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .youtube:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+}
+/*====================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+*/
+@media only screen
+  and (min-width: 1600px)
+  and (max-width:1920px)
+{
+  body{
+    background-color:black;
+    justify-content:center;
+    display:flex;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size:contain;
+  }
+  .mobile-table-mirror{
+    width:80%;
+    height:100%;
+    position:absolute;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size: contain;
+    background-color:none;
+    padding-top:10%;
+    justify-items:center;
+    display:block;
+  }
+  .full-mirror{
+    width:100%;
+    height:60%;
+    flex-direction:column;
+    justify-content:flex-end;
+    display:flex;
+  }
+  /* News */
+  .news {
+    z-index:1;
+    top: 5%;
+    left: 12%;
+    width: 15%;
+    height: 42%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/news_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .news:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(150%);
+  }
+  /* Poster */
+  .poster {
+    z-index:1;
+    top: 10%;
+    right: 10%;
+    width: 14%;
+    height: 35%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/poster_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .poster:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(130%);
+  }
+  .mirror{
+    width:100%;
+    height:100%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/mirrow.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:bottom;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+  }
+  .table{
+    margin-top:-1%;
+    width:100%;
+    height:40%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/table_hover.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+  }
+  .books{
+    width:15%;
+    height:40%;
+    background-color:none;
+    position:absolute;
+    bottom:0%;
+    left:28%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+  }
+  .magic{
+    height:100%;
+    width:17%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-magic_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-700%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .magic:hover {
+    transform: scale(1.5);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-magic{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content-magic {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .quote{
+    font-style:normal;
+    font-family: Verdana, Geneva, sans-serif;
+    border-left-color:#2c4762;
+    font-size:14px;
+    color:black;
+    text-align:justify;
+    font-size:28px;
+  }
+  .text {
+    background-color:none;
+    width:70%;
+    margin:auto;
+    color:black;
+    text-align:center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:28px;
+  }
+  .main-text {
+    font-size:36px;
+  }
+  li{
+    font-size: 32x;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top:5%;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 10px  16px 20px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .bio{
+    margin-left:-1%;
+    height:110%;
+    width:17%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-bio_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(500%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .bio:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-bio{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  .modal-content-bio {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  .gal{
+    margin-left:-1%;
+    height:120%;
+    width:17%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-galerie.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .gal:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-gal{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /*grid for photo Gallery */
+  .modal-content-gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: none;
+    margin: auto;
+    padding:40px;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Modal Gallerie */
+  /* The Modal (background) */
+  .modalGal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90vw;
+  }
+  img {
+    margin-bottom: -4px;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 3px;
+  }
+  img.slides {
+    height:100vh;
+    object-fit:contain;
+    background-color:black;
+    position:relative;
+  }
+  .close {
+    color: RGB(244, 255, 255);
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 40px;
+    font-weight: bold;
+    z-index:2;
+  }
+  .close:hover,
+  .close:focus {
+    color: RGB(255, 248, 234);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /*Termin*/
+  .termin{
+    margin-left:-1%;
+    height:110%;
+    width:20%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-termine_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  .termin:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-termin{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .header-termin {
+    margin-top:3%;
+  }
+  .termin-table {
+    width:80%;
+    margin: 0px auto 30px;
+    justify-content: center;
+    display:flex;
+  }
+  table, th, td {
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    font-size:26px;
+    font-weight:500;
+    color:black;
+  }
+  .modal-content-termin {
+    font-size: 20px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  .kontakt{
+    margin-left:-10%;
+    height:100%;
+    width:22%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-kontakt_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .kontakt:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-kontakt{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  .kontakt-form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+    font-size:30px;
+  }
+  h1{
+    font-size:36px;
+  }
+  .modal-content-kontakt {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top:0px;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 2px 16px 40px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .hat{
+    height:30%;
+    width:15%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/zylinder_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    position:absolute;
+    right:20%;
+    bottom:0%;
+    z-index:1;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInRight;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hat:hover {
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/rabbit.png");
+    background-size:contain;
+    /*transform: scale(1.3); (110% zoom)
+    transition-delay: 1s;*/
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+  }
+  .chair{
+    bottom: 0%;
+    width:50%;
+    height:30%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/chair-logo_hover_bright2.png');
+    background-color:none;
+    position:absolute;
+    left: 23%;
+  }
+  .film{
+    width:35%;
+    height:18%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/film-reel_hover.png');
+    background-color:none;
+    position:absolute;
+    right:16%;
+    bottom:0%;
+    font-size:26px;
+  }
+  .vid{
+    width:65%;
+    height:70%;
+    position:absolute;
+    bottom:10%;
+    filter:opacity(60%);
+    background-color:none;
+  }
+  /* Social Media */
+  .facebook {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:22%;
+    right:5%;
+    width:6%;
+    height:7%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/Facebook-icon-isolated-on-transparent-background-PNG.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    border-radius: 10px;
+  }
+  .facebook:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .instagram {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:12%;
+    right:5%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/pngwing.com_-e1643133331133.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:6%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .instagram:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .youtube {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:2%;
+    right:5%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/41603715902povuvxbr1l-1.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:6%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .youtube:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+}
+/*====================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+======================================================================================
+*/
+@media only screen
+  and (min-width: 1921px)
+{
+  body{
+    background-color:black;
+    justify-content:center;
+    display:flex;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size:contain;
+  }
+  .mobile-table-mirror{
+    width:80%;
+    height:100%;
+    position:absolute;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/background1.jpg');
+    background-size: contain;
+    background-color:none;
+    padding-top:10%;
+    justify-items:center;
+    display:block;
+  }
+  .full-mirror{
+    width:100%;
+    height:60%;
+    flex-direction:column;
+    justify-content:flex-end;
+    display:flex;
+    background-color:none;
+  }
+  /* News */
+  .news {
+    z-index:1;
+    top: 5%;
+    left: 12%;
+    width: 15%;
+    height: 42%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/news_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .news:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(150%);
+  }
+  /* Poster */
+  .poster {
+    z-index:1;
+    top: 10%;
+    right: 10%;
+    width: 14%;
+    height: 35%;
+    background-color:none;
+    position: fixed;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/poster_hover.png");
+    background-repeat:no-repeat;
+    background-position:left bottom;
+    background-size:contain;
+    transition: transform .3s;
+    /* Animation */
+    -webkit-animation:bounceIn 3s;
+  }
+  .poster:hover {
+    transform: scale(1.0);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(130%);
+  }
+  .mirror{
+    width:100%;
+    height:100%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/mirrow.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:bottom;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+  }
+  .table{
+    margin-top:-1%;
+    width:100%;
+    height:40%;
+    background-color:none;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/table_hover.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:top;
+  }
+  .books{
+    width:15%;
+    height:40%;
+    background-color:none;
+    position:absolute;
+    bottom:0%;
+    left:28%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-end;
+  }
+  .magic{
+    height:100%;
+    width:17%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-magic_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  @keyframes slideInDown {
+    0% {
+      transform: translateY(-700%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .magic:hover {
+    transform: scale(1.5);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-magic{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Sit on top */
+    padding-top: 20px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+  }
+  /* Modal Content */
+  .modal-content-magic {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .quote{
+    font-style:normal;
+    font-family: Verdana, Geneva, sans-serif;
+    border-left-color:#2c4762;
+    font-size:14px;
+    color:black;
+    text-align:justify;
+    font-size:36px;
+  }
+  .text {
+    background-color:none;
+    width:70%;
+    margin:auto;
+    color:black;
+    text-align:center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size:36px;
+  }
+  .main-text {
+    font-size:40px;
+  }
+  li{
+    font-size: 32x;
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top:5%;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 10px  16px 20px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .bio{
+    margin-left:-1%;
+    height:110%;
+    width:17%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-bio_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(500%)
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .bio:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-bio{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  .modal-content-bio {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  .gal{
+    margin-left:-1%;
+    height:120%;
+    width:17%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-galerie.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .gal:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-gal{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  /*grid for photo Gallery */
+  .modal-content-gal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: none;
+    margin: auto;
+    padding:40px;
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Modal Gallerie */
+  /* The Modal (background) */
+  .modalGal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90vw;
+  }
+  img {
+    margin-bottom: -4px;
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 3px;
+  }
+  img.slides {
+    height:100vh;
+    object-fit:contain;
+    background-color:black;
+    position:relative;
+  }
+  .close {
+    color: RGB(244, 255, 255);
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 40px;
+    font-weight: bold;
+    z-index:2;
+  }
+  .close:hover,
+  .close:focus {
+    color: RGB(255, 248, 234);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mySlides {
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0%;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /*Termin*/
+  .termin{
+    margin-left:-1%;
+    height:110%;
+    width:20%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-termine_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:2;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInUp;
+  }
+  .termin:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-termin{
+    opacity:0;
+    background-color:blue;
+    width:100%;
+    height: 100%;
+  }
+  .header-termin {
+    margin-top:3%;
+  }
+  .termin-table {
+    width:80%;
+    margin: 0px auto 30px;
+    justify-content: center;
+    display:flex;
+  }
+  table, th, td {
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    font-size:36px;
+    font-weight:500;
+    color:black;
+  }
+  .modal-content-termin {
+    font-size: 30px;
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  .kontakt{
+    margin-left:-10%;
+    height:100%;
+    width:22%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/book-kontakt_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    z-index:1;
+    transition: transform .3s;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInDown;
+  }
+  .kontakt:hover {
+    transform: scale(1.1);
+    /* (110% zoom)*/
+    -webkit-filter: brightness(200%);
+  }
+  .btn-kontakt{
+    opacity:0;
+    background-color:none;
+    width:100%;
+    height: 100%;
+  }
+  .kontakt-form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+    font-size:35px;
+  }
+  h1{
+    font-size:40px;
+  }
+  .modal-content-kontakt {
+    position: relative;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/popup-bg.png');
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-color: 0;
+    margin: auto;
+    padding:0;
+    border: 0;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  @keyframes animatetop {
+    from {
+      top:-300px;
+      opacity:0}
+    to {
+      top:0;
+      opacity:1}
+  }
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    top:0px;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal-header {
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+  }
+  .modal-body {
+    padding: 2px 16px 40px 16px;
+  }
+  .modal-footer {
+    padding: 2px 16px;
+    text-align: center;
+    color: red;
+  }
+  .hat{
+    height:30%;
+    width:15%;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/zylinder_hover.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:none;
+    position:absolute;
+    right:20%;
+    bottom:0%;
+    z-index:1;
+    /* Animation */
+    animation: 1s ease-in 0s 1 slideInRight;
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%)
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .hat:hover {
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/rabbit.png");
+    background-size:contain;
+    /*transform: scale(1.3); (110% zoom)
+    transition-delay: 1s;*/
+    -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+  }
+  .chair{
+    bottom: 0%;
+    width:50%;
+    height:30%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/chair-logo_hover_bright2.png');
+    background-color:none;
+    position:absolute;
+    left: 23%;
+  }
+  .film{
+    width:35%;
+    height:18%;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-image:url('https://store.oguzengin.de/wp-content/uploads/2022/01/film-reel_hover.png');
+    background-color:none;
+    position:absolute;
+    right:16%;
+    bottom:0%;
+    font-size:60px;
+  }
+  .vid{
+    width:65%;
+    height:70%;
+    position:absolute;
+    bottom:10%;
+    filter:opacity(60%);
+    background-color:none;
+  }
+  /* Social Media */
+  .facebook {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:22%;
+    right:5%;
+    width:6%;
+    height:7%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/Facebook-icon-isolated-on-transparent-background-PNG.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    border-radius: 10px;
+  }
+  .facebook:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .instagram {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:12%;
+    right:5%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/pngwing.com_-e1643133331133.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:6%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .instagram:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  .youtube {
+    background-color:#cfb033;
+    position:absolute;
+    bottom:2%;
+    right:5%;
+    background-image:url("https://store.oguzengin.de/wp-content/uploads/2022/01/41603715902povuvxbr1l-1.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    width:6%;
+    height:7%;
+    border-radius: 10px;
+  }
+  .youtube:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+  }
+  @keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
+}
